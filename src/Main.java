@@ -11,9 +11,14 @@ public class Main {
         for (int i = 0; i < imena.length; i++) {
             rendomBroj= rand.nextInt(imena.length);
             noviNiz[i] = imena[rendomBroj];
+            if (i == imena.length - 1){
+                System.out.print(noviNiz[i]);
+            }else {
+                System.out.print(noviNiz[i] + " ");
+            }
         }
-        for (String i : noviNiz) {
-            System.out.print(i + " ");
-        }
+//        for (String i : noviNiz) {
+//            System.out.print(i + " ");
+//        }
     }
 }
